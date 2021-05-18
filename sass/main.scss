@@ -17,7 +17,21 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline {
+    margin: 0 auto 40px;
+    width: 60px;
+    height: 4px;
+    background-color: $main-color;
+}
+
 .navbar {
+    z-index:1;
+
     .navbar-brand {
         font-family: 'Oregano', cursive;
         font-size: 31px;
@@ -54,6 +68,7 @@ body {
 
 .header {
     height: 100vh;
+    position: relative;
 
     .hero-img {
         background-image: url('../img/Header-Small.png');
@@ -70,6 +85,10 @@ body {
         }
 
         .header-text {
+            .zero-line {
+                font-size: 21px;      
+            }
+
             .first-line {
                 font-size: 23px;
                 font-weight: 700;
@@ -97,6 +116,55 @@ body {
     }
 }
 
+.about {
+    .about-image {
+        img {
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid transparent;
+            box-shadow: $box-shadow;
+        }
+    }
+
+    .about-text {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .about-buttons {
+        .btn {
+            color: $white;
+            font-size: 13px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            background: $button-gradient;
+            background-clip: padding-box;
+            border: 3px solid transparent;
+            box-shadow: $box-shadow;
+            transition: background 0.6s;
+        }
+    
+        .btn:hover {
+            background: $white;
+            background-clip: padding-box;
+            color: $black;
+        }
+    }
+}
+
+.experience {
+    .card {
+        border: 3px solid transparent;
+        box-shadow: $box-shadow;
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05); 
+    }
+}
 
  // Medium devices (tablets, 768px and up)
  @media (min-width: 768px) { 
@@ -121,6 +189,10 @@ body {
             }
 
             .header-text {
+                .zero-line {
+
+                }
+
                 .first-line {
                     font-size: 55px;
                     font-weight: 700;
@@ -132,6 +204,12 @@ body {
                     margin: 3px 0;
                 }
             }
+        }
+    }
+
+    .about {
+        .about-text {
+            font-size: 18px;
         }
     }
 }
@@ -157,6 +235,13 @@ body {
             background-size: cover;
             background-position: left;
 
+            .header-photo {
+                img{
+                    width: 380px;
+                    height: 380px;
+                }
+            }
+
             .header-text {
                 .first-line {
                     font-size: 65px;
@@ -170,6 +255,12 @@ body {
                 }
             }
         }  
+    }
+
+    .about {
+        .about-text {
+            font-size: 20px;
+        }
     }
  }
 
@@ -208,6 +299,12 @@ body {
                     margin: 5px 0;
                 }
             }
+        }
+    }
+
+    .about {
+        .about-text {
+            font-size: 20px;
         }
     }
  }
