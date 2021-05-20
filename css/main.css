@@ -14,6 +14,7 @@ html {
 body {
   position: relative;
   font-family: 'Work Sans', sans-serif;
+  background: url(../img/body.png) no-repeat;
 }
 
 h2 {
@@ -30,6 +31,9 @@ h2 {
 
 .navbar {
   z-index: 1;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.405);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.405);
 }
 
 .navbar .navbar-brand {
@@ -189,7 +193,7 @@ h2 {
 }
 
 .skills .set .set-list li {
-  padding: 15px 0px;
+  padding: 15px 5px;
 }
 
 .skills .set .set-list i {
@@ -220,6 +224,26 @@ h2 {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.contact .social i {
+  padding: 0 5px;
+  font-size: 22px;
+}
+
+.contact .social .head {
+  padding: 0 5px;
+}
+
+footer {
+  padding-top: 4rem;
+  background: url(../img/footer.png) no-repeat;
+}
+
+footer .site-logo {
+  font-family: 'Oregano', cursive;
+  font-size: 23px;
+  color: #8c52ff;
 }
 
 @media (min-width: 768px) {

@@ -15,6 +15,7 @@ html {
 body {
     position: relative;
     font-family: 'Work Sans', sans-serif;
+    background: url(../img/body.png) no-repeat;
 }
 
 h2 {
@@ -29,8 +30,11 @@ h2 {
     background-color: $main-color;
 }
 
+
 .navbar {
     z-index:1;
+    background: #ffffff;
+    box-shadow: $box-shadow;
 
     .navbar-brand {
         font-family: 'Oregano', cursive;
@@ -193,7 +197,7 @@ h2 {
 
         .set-list {
             li {
-                padding: 15px 0px;
+                padding: 15px 5px;
             }
 
             i {
@@ -230,6 +234,30 @@ h2 {
         height: 300px;
         object-fit: cover;
         object-position: center;
+    }
+}
+
+.contact {
+    .social {
+        i {
+            padding: 0 5px;
+            font-size: 22px;
+        }
+
+        .head {
+            padding: 0 5px;
+        }
+    }
+}
+
+footer {
+    padding-top: 4rem;
+    background: url(../img/footer.png) no-repeat;
+
+    .site-logo {
+        font-family: 'Oregano', cursive;
+        font-size: 23px;
+        color: $main-color;
     }
 }
 
