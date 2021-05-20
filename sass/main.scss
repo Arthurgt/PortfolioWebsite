@@ -125,6 +125,11 @@ h2 {
             border-radius: 15px;
             border: 3px solid transparent;
             box-shadow: $box-shadow;
+            transition: transform 0.3s;
+        }
+    
+        img:hover {
+            transform: scale(1.05); 
         }
     }
 
@@ -134,7 +139,7 @@ h2 {
     }
 
     .about-buttons {
-        .btn {
+        .btn-outline-dark {
             color: $white;
             font-size: 13px;
             text-transform: uppercase;
@@ -146,7 +151,7 @@ h2 {
             transition: background 0.6s;
         }
     
-        .btn:hover {
+        .btn-outline-dark:hover {
             background: $white;
             background-clip: padding-box;
             color: $black;
@@ -159,10 +164,72 @@ h2 {
         border: 3px solid transparent;
         box-shadow: $box-shadow;
         transition: transform 0.3s;
+
+        .card-body {
+            .card-title{
+                font-size: 14px;
+
+                .peroid{
+                    font-weight: bold;
+                }
+
+                .position{
+                    color: $main-color;
+                }
+            }
+        }
     }
 
     .card:hover {
         transform: scale(1.05); 
+    }
+}
+
+.skills {
+    .set {
+        .set-name {
+            padding-bottom: 15px;
+        }
+
+        .set-list {
+            li {
+                padding: 15px 0px;
+            }
+
+            i {
+                color: $main-color;
+            }
+        }
+    }
+}
+
+.projects {
+    padding: 4rem 0;
+
+    .button-group {
+        button {
+           background: transparent;
+           border: none;
+           font-size: 16px;
+           text-transform: uppercase;
+           padding-left: 2rem;
+           padding-bottom: 2rem;
+        }
+
+        button:focus, button:active button:hover .btn:active, btn.active {
+
+        }
+    }
+
+    h4 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    img {
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
     }
 }
 
@@ -212,6 +279,16 @@ h2 {
             font-size: 18px;
         }
     }
+
+    .experience {
+        .card {   
+            .card-body {
+                .card-title{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -259,7 +336,17 @@ h2 {
 
     .about {
         .about-text {
-            font-size: 20px;
+            font-size: 19px;
+        }
+    }
+
+    .experience {
+        .card {   
+            .card-body {
+                .card-title{
+                    font-size: 18px;
+                }
+            }
         }
     }
  }
@@ -305,6 +392,16 @@ h2 {
     .about {
         .about-text {
             font-size: 20px;
+        }
+    }
+
+    .experience {
+        .card {   
+            .card-body {
+                .card-title{
+                    font-size: 20px;
+                }
+            }
         }
     }
  }
